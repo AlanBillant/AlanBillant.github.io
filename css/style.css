@@ -1,0 +1,1279 @@
+body {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: #000;
+    font-family: 'oswaldregular';
+    font-size: 1.5em;
+}
+
+a {
+    color: #555555;
+    text-decoration: none;
+}
+
+div a:hover {
+    color: #0000ff;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+li {
+    list-style: none;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    font-family: 'robotoregular';
+    border-style: solid;
+    border-color: #000;
+}
+
+
+h3 {
+    width: 70%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5px auto 5px auto;
+    font-family: 'robotoregular';
+}
+
+.bloc {
+    margin: 4em 0;
+}
+
+.icone {
+    border-radius: 50%;
+}
+
+.ADroite {
+    text-align: right;
+}
+
+.AGauche {
+    text-align: left;
+}
+
+.titreListe1 {
+    font-size: 1.15em;
+    list-style: none;
+}
+
+.titreListe2 {
+    font-size: 1.15em;
+}
+
+.soustexte {
+    font-size: .75em;
+}
+
+
+
+
+/* ///////////////////////// Header ////////////////////////// */
+header {
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* Photo de Profil */
+.cadre1 {
+    background-image: url(../images/Photos/P32.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calque1 {
+    background-color: #252525;
+    opacity: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadre1:hover {
+    animation-play-state: paused;
+}
+
+.calque1:hover {
+    opacity: 0.7;
+}
+
+.calque1 > span {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+}
+
+#lienPhoto {
+    border-radius: 50%;
+}
+
+
+/* A propos */
+
+
+.aPropos {
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 10px;
+    padding: 1em;
+    background-color: #eeeeee;
+}
+
+.aPropos:hover {
+    animation-name: bordureAnime;
+    animation-duration: 500s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+
+
+/* Presentation */
+.sousTexte1 {
+    opacity: 0;
+    animation-name: apparitionH;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    letter-spacing: 10px;
+    font-size: 2em;
+    color: #000;
+}
+
+.sousTexte1:nth-child(2) {
+    animation-delay: 0.25s;
+    margin-top: 0;
+}
+
+
+
+/* ///////////////////////////// Fin Header ////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////// Aside ////////////////////////////// */
+
+
+aside {
+    opacity: .5;
+    position: sticky;
+    top: 0;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-right-width: 10px;
+    border-left-width: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+
+aside:hover {
+    opacity: 1;
+    border-color: rgb(100, 100, 100);
+    background-color: #000;
+}
+
+aside:hover div ul a li {
+    color: #ffffff;
+}
+
+aside > div > ul {
+    font-size: .8em;
+}
+
+aside div ul a li {
+    color: #000;
+}
+
+aside div ul a li:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+
+/* //////////////////////////// Fin Aside ////////////////////////////// */
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////// Main ////////////////////////////// */
+
+main {
+    padding: 0 0 1em 0;
+}
+
+.titre {
+    text-align: center;
+    margin: 0 .5em;
+}
+
+.fantome {
+    padding-top: 5em;
+}
+
+
+
+
+
+
+
+
+/* ///// Partie Formation ///// */
+.blocFormation {
+    margin: 0 0 3em 0;
+}
+
+.enCours,
+.termine {
+    margin-top: 1em;
+    border-style: solid;
+    border-color: #000;
+    box-shadow: 0 4px 10px #000;
+}
+
+.lFormation {
+    margin: 1em 0;
+}
+
+
+
+
+
+
+
+/* ///// Partie Compétence ///// */
+.blocCompetence {
+    margin: 3em;
+    padding: 0 auto 3em auto;
+}
+
+.blocCompetence > h3,
+.titreCompetence {
+    width: 80%;
+}
+
+.categorie {
+    margin: 5em 0;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-color: #000;
+}
+
+.section {
+    margin: 2.5em 0;
+}
+
+.iconAnimation h4 {
+    color: #999999;
+}
+
+.iconAnimation:hover h4 {
+    color: #000000;
+}
+
+.iconAnimation:hover {
+    animation: .5s infinite respiration;
+}
+
+.blocCompetence > div:nth-child(4) {
+    padding-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// Partie Projet ///// */
+
+.blocProjet {
+    margin: 0 0 3em 0;
+}
+
+.projet {
+    margin: 2em auto 0 auto;
+    padding-top: 1em;
+    border-style: solid;
+    border-color: #000;
+    box-shadow: 0 4px 10px #000;
+}
+
+.lResume {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imageAnimation {
+    margin: 2em auto 2em auto;
+}
+
+.imageAnimation > img {
+    border-style: solid;
+    border-color: #000;
+}
+
+.projet > h3 {
+    font-size: 1.5em;
+    border-radius: 2rem;
+}
+
+.imageAnimation > div > div > ul {
+    font-size: .75em;
+}
+
+.lProjet {
+    margin: 1em auto;
+    padding-left: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// Partie Stage ///// */
+.blocStage {
+    margin: 0 0 3em 0;
+}
+
+.blocStage > div > div {
+    margin-top: 4em;
+}
+
+.lStage {
+    margin: 1em 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ///// Partie Voyages ///// */
+
+.blocVoyage {
+    margin: 0 0 3em 0;
+}
+
+.carte {
+    margin-top: 2em;
+}
+
+.imgCarte {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// Partie Langue ///// */
+.blocLangue {
+    margin: 0 0 3em 0;
+}
+
+.blocLangue > div {
+    margin-top: 2em;
+}
+
+.francais {
+    background-image: url(../images/Fonds/France.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.anglais {
+    background-image: url(../images/Fonds/Royaume-Uni.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.espagnol {
+    background-image: url(../images/Fonds/Espagne.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.breton {
+    background-image: url(../images/Fonds/Breton.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cadreLangue {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #000;
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calqueLangue {
+    background-color: #121212;
+    opacity: 0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calqueLangue:hover {
+    opacity: .9;
+}
+
+.cadreLangue:hover {
+    box-shadow: 0 4px 6px #000;
+}
+
+.calqueLangue > span {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/* Partie Interets */
+
+span div ul li {
+    margin: .5em auto .5em auto;
+}
+
+.listeInteretSec{
+    width: 100%;
+    font-size: .8em;
+}
+.listeInteretSec > span{
+    width: 100%;
+}
+
+.tInteret {
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #000;
+    border-left-color: #000;
+    margin: 2em auto 1em auto;
+}
+
+.genre {
+    text-decoration: underline;
+    color: #000
+}
+
+.lienInteret {
+    color: #555555;
+}
+
+.lienImage {
+    color: #777777;
+}
+
+.genre:hover,
+.lienInteret:hover {
+    color: #0000ff;
+}
+
+.lienImage:hover {
+    color: #ffffff;
+}
+
+
+.cadreInteret {
+    border-style: solid;
+    border-color: #000;
+    margin: 0 auto 2em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px #000;
+}
+
+.calqueInteret {
+    background-color: #121212;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes fondJeux {
+
+    10% {
+        background-image: url(../images/Fonds/Zelda.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    20% {
+        background-image: url(../images/Fonds/Terraria.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    30% {
+        background-image: url(../images/Fonds/Mario.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    40% {
+        background-image: url(../images/Fonds/Minecraft.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    50% {
+        background-image: url(../images/Fonds/Pokemon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    60% {
+        background-image: url(../images/Fonds/Starbound.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    70% {
+        background-image: url(../images/Fonds/DragonQuest.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    80% {
+        background-image: url(../images/Fonds/Subnautica.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    90% {
+        background-image: url(../images/Fonds/GodOfWar.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.cadreJeux {
+    background-image: url(../images/Fonds/MHW.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: 40s linear 4s infinite normal fondJeux;
+}
+
+.calqueJeux > span {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    padding: 1.2em;
+}
+
+
+
+
+@keyframes fondBio {
+
+
+    25% {
+        background-image: url(../images/Fonds/Forets.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    50% {
+        background-image: url(../images/Fonds/Ciel.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    75% {
+        background-image: url(../images/Fonds/Desert.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+
+.cadreBio {
+    background-image: url(../images/Fonds/Ocean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: 25s linear 5s infinite normal fondBio;
+
+}
+
+.calqueBio > span {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    padding: 1.2em;
+}
+
+
+@keyframes fondMythes {
+
+    25% {
+        background-image: url(../images/Fonds/Horus.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    50% {
+        background-image: url(../images/Fonds/Odin.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    75% {
+        background-image: url(../images/Fonds/Brahma.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.cadreMythes {
+    background-image: url(../images/Fonds/Zeus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: 24s linear 6s infinite normal fondMythes;
+}
+
+.calqueMythes > span {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    padding: 1.2em;
+}
+
+@keyframes fondManga {
+
+    12.5% {
+        background-image: url(../images/Fonds/DrStone.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    25% {
+        background-image: url(../images/Fonds/Terraformars.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    37.5% {
+        background-image: url(../images/Fonds/GoblinSlayer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    50% {
+        background-image: url(../images/Fonds/FairyTail.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    62.5% {
+        background-image: url(../images/Fonds/Overlord.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    75% {
+        background-image: url(../images/Fonds/Valkyrie.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    87.5% {
+        background-image: url(../images/Fonds/PromisedNeverLand.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+}
+
+.cadreManga {
+    background-image: url(../images/Fonds/AkameGaKill.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: 40s linear 4s infinite normal fondManga;
+}
+
+.calqueManga > span {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+/* main */
+
+
+
+
+/* //////////////////////////// Fin Main ////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////// Footer //////////////////////////////// */
+
+
+
+
+
+footer {
+    width: 100%;
+}
+
+.sousTexte3 {
+    opacity: 0;
+    animation-name: apparitionB;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    text-align: center;
+    margin: 0 auto .5em auto;
+}
+
+.lFooter {
+    border-top-style: solid;
+    border-top-color: #000;
+}
+
+.lFooter > ul {
+    text-align: center;
+}
+
+.mail > a {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+
+/* /////////////////////////// Fin Footer //////////////////////////// */
+
+
+
+/* /////////////////////////// Responsivité //////////////////////////// */
+
+
+
+/* Tant que c'est un ecran de tablette */
+@media only screen and (max-width:850px) {
+    /* Body */
+
+    body {
+        font-size: .7em;
+    }
+
+    /* Header */
+    .cadre1 {
+        margin: 1em auto 1em auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .calque1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .calque1 > span {
+        font-size: 1.25em;
+    }
+
+    aside {
+        display: none;
+    }
+
+
+
+    /* Main */
+    ul, lProjet, lFormation {
+        text-align: center;
+        border: none;
+    }
+
+    .titre {
+        letter-spacing: 5px;
+        font-size: 1.5em;
+    }
+
+    /* Formation */
+
+    .enCours,
+    .termine {
+        width: 90%;
+        margin: 1em auto 0 auto;
+    }
+
+    /* Competences*/
+
+    .iconAnimation h3 {
+        font-size: 1em;
+    }
+
+    /* Projet */
+    .imageProjet{
+        max-width:60%;height:auto;
+    }
+
+
+    /* Interet */
+    .cadreInteret,
+    .calqueInteret {
+        height: 200px;
+    }
+    
+    .listeInteretPrinc{
+        display: none;
+    }
+    .listeInteretSec{
+        display: flex;
+        order: 2;
+    }
+
+    .textInteret, .textInteret2 {
+        order: 3;
+    }
+
+    .imageInteret, .imageInteret2 {
+        order: 1;
+    }
+
+
+    /* Footer */
+    .hautDePage{
+        width:50px;
+        height:50px;
+    }
+    .sousTexte3 {
+        letter-spacing: 0px;
+        font-size: 1.25em;
+    }
+
+}
+@media only screen and (min-width:1365px) {
+    /* Body */
+    .listeG {
+        text-align: left;
+    }
+    
+    /* Header */
+    .cadre1{
+        animation: 2s infinite respiration;
+    }
+    /* Main */
+    .titre {
+        letter-spacing: 10px;
+        font-size: 2.5em;
+    }
+    
+    
+    /* Formation */
+    .enCours,
+    .termine {
+        margin: 1em auto 0 auto;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .lFormation{
+        padding-left: .5em;
+        border-left-style: solid;
+        border-left-color: #000;
+    }
+    
+    /* Projet */
+    .imageProjet{
+        max-width:90%;height:auto;
+    }
+    .lProjet {
+        border-left-style: solid;
+        border-left-color: #000;
+    }
+
+    .imageAnimation > img:hover {
+        animation: 0.5s 1 zoomC;
+        transform: scale(1.1);
+    }
+    
+    /* Stage */
+    .lStage{
+        padding-left: .5em;
+        border-left-style: solid;
+        border-left-color: #000;
+    }
+    
+    /* Interet */    
+    .cadreInteret,
+    .calqueInteret {
+        height: 350px;
+    }
+    .textInteret {
+        order: 2;
+    }
+    .textInteret2{
+        order: 1;
+    }
+
+    .imageInteret {
+        order: 1;
+    }
+    .imageInteret2{
+        order: 2;
+    }
+    .listeInteretPrinc{
+        display: flex;
+    }
+    
+    .listeInteretSec{
+        display: none;
+    }
+    
+    .cadreJeux:hover {
+        box-shadow: 0 4px 6px #000;
+        animation-play-state: paused;
+    }
+
+    .calqueJeux:hover {
+        opacity: .9;
+    }
+    
+    .calqueBio:hover {
+        opacity: .9;
+    }
+    .cadreBio:hover {
+        animation-play-state: paused;
+        box-shadow: 0 4px 6px #000;
+    }
+    
+    .calqueMythes:hover {
+        opacity: .9;
+    }
+
+    .cadreMythes:hover {
+        box-shadow: 0 4px 6px #000;
+    }
+
+    .calqueManga:hover {
+        opacity: .9;
+    }
+    .cadreManga:hover {
+        box-shadow: 0 4px 6px #000;
+        animation-play-state: paused;
+    }
+    
+    /* Footer */
+    .hautDePage{
+        width:100px;
+        height:100px;
+    }
+ 
+    .sousTexte3 {
+        letter-spacing: 5px;
+        font-size: 1.2em;
+    }
+
+}
+
+/* Tant que c'est un ecran de 15 pouces */
+@media only screen and (max-width:1367px) {
+
+    /* Header */
+    .cadre1,
+    .calque1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .cadre1 {
+        margin: 3em auto 3em auto;
+    }
+
+    /*
+    .lesBubules {
+        display: none;
+    }
+
+    .navBar {
+        width: 80%;
+        border-radius: 1rem;
+        padding: 1em;
+    }
+
+    .navBar div ul {
+        display: block;
+        align-content: center;
+        flex-wrap: nowrap;
+        list-style: none;
+        padding: 0;
+    }
+
+    .navBar > div > ul > a > li {
+        color: #000;
+    }
+
+    .navBar > div > ul > a > li:hover {
+        color: #ff0000;
+        text-decoration: none;
+    }*/
+    
+    /* Aside */
+
+    aside > div > ul {
+        font-size: .5em;
+    }
+
+    /* Main */
+
+    
+    /* Formation */
+
+
+    /* Projet */
+    .projet {
+        width: 90%;
+    }
+
+    .listeInteretPrinc{
+        font-size: .8em;
+    }
+
+}
+
+
+
+
+
+
+
+/* Tant que c'est un Grand Ecran */
+@media only screen and (min-width:1368px) {
+
+    
+    aside > div > ul {
+        font-size: .8em;
+    }
+    .cadre1,
+    .calque1 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .cadre1 {
+        margin: 5em auto 5em auto;
+    }
+
+    .cadreInteret,
+    .calqueInteret {
+        height: 500px;
+    }
+
+    .projet {
+        flex: 0 0 40%;
+    }
+    
+    /*    
+    .bulle {
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #ffffff;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding:.5em;
+        color: #000;
+    }
+    
+    .bulle:hover{
+        animation-name: bordureAnime;
+        animation-duration: 30s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+
+    .bulle1 {
+        /* Formation */
+    /*
+        top: 10em;
+        left: 5%;
+        width: 150px;
+        height: 50px;
+    }
+    
+    .bulle2 {
+        /* Compétence */
+    /*
+        top: 20em;
+        left: 5%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .bulle3 {
+        /* Projets */
+    /*
+        top: 10em;
+        left: 20%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .bulle4 {
+        /* Stage */
+    /*
+        top: 20em;
+        left: 20%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .bulle5 {
+        /* Exp Pro */
+    /*
+        top: 10em;
+        right: 20%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .bulle6 {
+        /* Voyages */
+    /*
+        top: 20em;
+        right: 20%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .bulle7 {
+        /* Langues */
+    /*
+        top: 10em;
+        right: 5%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .bulle8 {
+        /* Interets */
+    /*
+        top: 20em;
+        right: 5%;
+        width: 150px;
+        height: 50px;
+    }
+*/
+}
